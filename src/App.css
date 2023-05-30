@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Instrument+Serif:ital@1&family=Kanit&family=Pangolin&family=Patrick+Hand&family=Playfair+Display&family=Roboto+Slab&family=Smokum&family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding:  0 10px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    button,
+    a{
+        cursor: pointer;
+        color: inherit;
+        text-decoration: none;
+        width: fit-content;
+        width: -webkit-fit-content;
+    }
+
+    ul{
+        list-style: none;
+    }
+body{
+      width: 100%;
+    color: #fff;
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar { 
+  width: 0px;  
+  background: transparent; 
 }

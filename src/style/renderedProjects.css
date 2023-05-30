@@ -1,0 +1,29 @@
+.renderProject-list{
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    z-index: 2; 
+    /* overflow-y: scroll;  */
+}
+.renderProject-list_item a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.renderProject-list_item:hover{
+    transform: scale(1.1);
+    transition: 0.75s ease-in-out;
+}
+.renderProject-img{
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5%;
+
+}
