@@ -15,7 +15,7 @@ const Project = () => {
        
        <li className='renderProject-list_item' key={project.id}>
             
-            <Link  to={`/${project.id}`}>  
+            <Link  to={`${project.id}`}>  
             <img className="renderProject-img" src={project.img} alt=''/>
             {project.name} </Link>
         </li>

@@ -23,14 +23,14 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}> 
     <Routes> 
-   <Route path="/" element={<Layout />}> 
+   <Route path="/final-work/" element={<Layout />}> 
       
     <Route index element={<Project />} />
     
       <Route path=":projectId" element={<ProjectPage />} />
-    <Route path="about" element={<SkillsPage />} />
-    <Route path="job" element={<WorkPage />} />
-    <Route path="contacts" element={<ContactsPage />} />
+    <Route path="/final-work/about" element={<SkillsPage />} />
+    <Route path="/final-work/job" element={<WorkPage />} />
+    <Route path="/final-work/contacts" element={<ContactsPage />} />
     </Route>
     </Routes>
  
