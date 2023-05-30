@@ -8,7 +8,8 @@ const initialState = [
          URL: 'https://sonyachn27.github.io/cursor/lesson16/',
          img: 'https://sonyachn27.github.io/cursor/lesson16/images/Rectangle16.png',
          description: 'Landing page is the best way to get online and grow your business',
-         technologies: ['HTML', 'SCC', "SASS",'CrossBrowser', 'Responsive']
+         
+        technologies: ['HTML', 'SCC', "SASS",'CrossBrowser', 'Responsive']
         },
     {
         id: 1, 
